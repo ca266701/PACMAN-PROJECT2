@@ -1,0 +1,35 @@
+.background    { background: black;;
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: rgb(50, 50, 250); }
+.wall          { background: white;   }
+
+.actor  { position: absolute;  }
+
+.coin { background-image: url("../Dot.png");}
+
+.player { background-image: url("../PM4.png");}
+
+.powerup {background-image: url("../Che.png");}
+
+.projectile { background-image: url("../Blu.png"); }
+/*.projectile2 { background-image: url("../Pin.png"); } MAJOR FAIL!!!!!!!!!!!!!!!!!           -------------------*/
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background-image: url("../lose.png");
+ opacity: 0.4;
+ filter: alpha(opacity=40);
+ 
+}
+.won .player {
+  box-shadow: -4px -7px 100px white, 4px -7px 100px white;
+  background-image: url("../win.png");
+ 
+}
